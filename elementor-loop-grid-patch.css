@@ -1,0 +1,17 @@
+/* 
+ * Enterprise Patch: Elementor Loop Grid Icon Rendering Fix
+ * Ensures correct rendering of inline font icons within nested loop grids
+ * bypassing aggressive server-side caching mechanisms.
+ */
+
+.elementor-loop-container .elementor-icon {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.elementor-loop-container .elementor-icon svg {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
